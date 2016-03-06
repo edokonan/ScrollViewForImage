@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ScrollViewForImage" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="10" translatesAutoresizingMaskIntoConstraints="NO" id="Yv9-t9-A20" customClass="TouchScrollView" customModule="ScrollViewForImage" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="600" height="512"/>
+                            </scrollView>
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ngO-Y3-o8w">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="dGz-D2-gdW"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="ScrollViewForImage" id="4ix-3O-LPT"/>
+                                </items>
+                            </navigationBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A5s-AG-vAA">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="JZX-wD-9sM"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="Item" id="Cuc-ka-0FH"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Yv9-t9-A20" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="9qa-XF-uMQ"/>
+                            <constraint firstItem="Yv9-t9-A20" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="K9S-Ic-gJL"/>
+                            <constraint firstItem="Yv9-t9-A20" firstAttribute="top" secondItem="ngO-Y3-o8w" secondAttribute="bottom" id="Q6W-lU-YN2"/>
+                            <constraint firstItem="ngO-Y3-o8w" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="S2y-bK-0iQ"/>
+                            <constraint firstItem="ngO-Y3-o8w" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Wi2-ZT-tb3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="A5s-AG-vAA" secondAttribute="bottom" id="XaR-U5-CW8"/>
+                            <constraint firstItem="A5s-AG-vAA" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="cty-9W-u2S"/>
+                            <constraint firstItem="Yv9-t9-A20" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dmw-ZK-KN8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="Yv9-t9-A20" id="tnQ-gY-3dm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="418"/>
+        </scene>
+    </scenes>
+</document>

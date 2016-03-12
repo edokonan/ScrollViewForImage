@@ -23,12 +23,12 @@ class ViewController: UIViewController , UIScrollViewDelegate {
         scrollView.addSubview(scrollView.imageView)
 
         
-        scrollView.Person = UIImageView(image: UIImage(named: "point.png"))
-        scrollView.Person.center = CGPointMake(160, 330)
+        scrollView.TouchPoint = UIImageView(image: UIImage(named: "point.png"))
+        scrollView.TouchPoint.center = CGPointMake(160, 330)
         let rect:CGRect = CGRectMake(0, 0, 50, 50)
-        scrollView.Person!.frame = rect;
+        scrollView.TouchPoint!.frame = rect;
         
-        scrollView.addSubview(scrollView.Person)
+        scrollView.addSubview(scrollView.TouchPoint)
     }
     
     override func didReceiveMemoryWarning() {
